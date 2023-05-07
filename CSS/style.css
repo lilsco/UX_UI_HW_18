@@ -28,6 +28,18 @@
     margin-left: 0 auto; 
     margin-right: 0 auto; 
 }
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 30, 218);
+  }
+  .flexContainer > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 33%;
+  }
 
   footer {
     width: 500px
