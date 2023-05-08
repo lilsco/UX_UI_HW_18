@@ -4,10 +4,9 @@
     background-color: rgb(234, 203, 156);
   }
   div.logo {
-   width: 50%;
+   width: 20%;
    padding: 3%; 
    align-content: center;   
-   text-align: center;
   }
   nav {
     width: 73%;
