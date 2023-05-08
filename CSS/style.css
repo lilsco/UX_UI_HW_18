@@ -1,6 +1,8 @@
 * {
     display: inline-block;
     vertical-align: top;
+  }
+  body {
     background-color: rgb(234, 203, 156);
   }
   div.logo {
