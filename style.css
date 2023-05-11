@@ -3,21 +3,39 @@
     vertical-align: top;
   }
   body {
+    margin: 0;
+    padding: 0;
     background-color: rgb(255, 250, 242);
   }
-  div.logo {
-   width: 20%;
-   padding: 10%; 
-   text-align: center;   
-  }
-  nav {
-    width: 73%;
-    padding: 1%;
-    display: table-row;    
+  .navigation-bar {
+    width: 100%;
+    background-color: aliceblue;
+    overflow: auto;
   }
   ul {
-    width: 50%;
-    margin-left: center;
+    padding: 0px;
+    margin: 0 0 0 150px;
+    list-style: none;  
+  }
+  li {
+    float: left;
+  }
+  .logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;  
+  }
+  nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color:rgb(255, 183, 0)
+    text-align: center;
+  }
+  nav a:hover {
+    background: red
+    transition: .5s
   }
   .heroImg {
     height: 600px
