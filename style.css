@@ -7,7 +7,8 @@
     padding: 0;
     background-color: rgb(255, 250, 242);
   }
-  .navigation-bar {
+  /*nav bar code*/
+  nav {
     width: 100%;
     background-color: aliceblue;
     overflow: auto;
@@ -41,6 +42,7 @@
     background: red
     transition: .5s
   }
+  /*end nav bar code*/
   .heroImg {
     height: 600px
     padding 25px;
