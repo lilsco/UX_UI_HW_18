@@ -1,0 +1,95 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+  }
+  body {
+    background-color: rgb(234, 203, 156);
+  }
+  div.logo {
+   width: 20%;
+   padding: 10%; 
+   text-align: center;   
+  }
+  nav {
+    width: 73%;
+    padding: 1%;
+    display: table-row;    
+  }
+  ul {
+    width: 50%;
+    margin-left: center;
+  }
+  .heroImg {
+    height: 600px
+    padding 25px;
+    margin-left: auto;
+  }
+  .content {
+    width: 500px
+    padding 25px;
+    margin-top: 0 auto; 
+    margin-bottom: 0 auto; 
+    margin-left: 0 auto; 
+    margin-right: 0 auto; 
+}
+/*<!-- My Skills Section Constructed using CSS Grid -->*/
+  .flexContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 30, 218);
+  }
+  .flexContainer > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 33%;
+  }
+  .item1 {
+    grid-area: myArea;
+  }
+ /*<!-- My Work Section Constructed using CSS Grid -->*/
+  .workGrid {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 'myArea myArea myArea myArea myArea';
+    flex-direction: row;
+    background-color: rgb(255, 30, 218);
+  }
+  .workGrid > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 33%;
+  }
+  footer {
+    width: 500px
+    padding 25px;
+    margin: 0 auto;
+    background: #373738;
+  }
+  footer ul {
+    display: inline-block; 
+    vertical-align: top;
+    width: 500px
+    padding 25px;
+    margin: 0 auto;
+    background: #373738;
+  }
+  footer li {
+    text-align: center;
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .workGrid {
+      display: grid;
+      grid-template-rows: 200px 200px 200px 200px 200px;
+      grid-template-columns: 1fr;
+      grid-template-areas: 'myArea myArea myArea myArea myArea';
+      background-color: rgb(255, 30, 218);
+    }
+  }
