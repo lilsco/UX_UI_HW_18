@@ -21,22 +21,23 @@
   li {
     float: left;
   }
-  .logo img {
-    float: left;
-    position: relative;
-    margin-top: 10px 15px 15px 10px;
-  }
-  
+  .logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
   nav a {
     width: 100px;
     display: block;
     padding: 20px 15px;
     text-decoration: none;
-    color:rgb(255, 183, 0)
+    color:rgb(255, 183, 0);
     text-align: center;
   }
   nav a:hover {
-    background: red
+    background: red;
     transition: .5s
   }
   /*end nav bar code*/
