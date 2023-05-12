@@ -22,9 +22,9 @@
     float: left;
   }
   .logo img {
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;  
+    float: left;
+    position: relative;
+    margin-top: 10px 15px 15px 10px;
   }
   
   nav a {
