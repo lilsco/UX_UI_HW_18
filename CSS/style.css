@@ -3,22 +3,44 @@
     vertical-align: top;
   }
   body {
-    background-color: rgb(234, 203, 156);
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 250, 242);
   }
-  div.logo {
-   width: 20%;
-   padding: 10%; 
-   text-align: center;   
-  }
+  /*nav bar code*/
   nav {
-    width: 73%;
-    padding: 1%;
-    display: table-row;    
+    width: 100%;
+    background-color: aliceblue;
+    overflow: auto;
   }
   ul {
-    width: 50%;
-    margin-left: center;
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;  
   }
+  li {
+    float: left;
+  }
+  .logo-image {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+  nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    color:rgb(255, 183, 0);
+    text-align: center;
+  }
+  nav a:hover {
+    background: red;
+    transition: .5s
+  }
+  /*end nav bar code*/
   .heroImg {
     height: 600px
     padding 25px;
