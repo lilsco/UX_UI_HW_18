@@ -1,51 +1,138 @@
+body {
+  margin:0;
+  padding: 0;
+  background-color: rgb(255, 250, 242);
+}
+
+header {
+  background-color: rgb(255, 250, 242);
+  outline: 2px rgb(0, 72, 255);
+  outline-style: dotted;
+  outline-offset: bottom;
+}
+header ul {
+  /* outline: 2px solid red; */
+  background-color: rgb(255, 250, 242);
+  /* padding: 0px;
+  margin-top: 0px; */
+  /* height: 130px;
+  width: 100%; */
+  list-style: none; 
+  padding: 0;
+  display: inline-block;  
+  margin-left: 100px;
+  float: right;
+  margin-right: 10px;
+}
 .inline-block {
-    display: inline-block;
-    vertical-align: top;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 250, 242);
-  }
+  display: inline-block;
+  vertical-align: top;
+}
   /*nav bar code*/
-  nav {
+  /*nav {
+    padding: 0px;
+    margin-top: 0px;
+    height: 130px;
     width: 100%;
     background-color: aliceblue;
-    overflow: auto;
-  }
-  ul {
+  }*/
+  /* header ul {
     padding: 0;
-    margin: 0 0 0 150px;
+    display: inline-block;
     list-style: none;  
-  }
-  li {
-    float: left;
+  } */
+  header li {
+    /*outline: 2px solid red;*/
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    margin: 20px; 
+    display: inline-block;
+    padding: 20px;
+    
   }
   .logo-image {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-}
-  nav a {
-    width: 100px;
-    display: block;
-    padding: 20px 15px;
+    width: 130px;
+    height: 130px;
+    /* display: inline-block; */
+    border-radius: 20px;
+    margin-top: 0;
+  }
+ 
+  header li a {
+    /* display: block; */
+    margin: 5px;
     text-decoration: none;
     color:rgb(255, 183, 0);
-    text-align: center;
+    text-align: right;
+    /*line-height: 50px;*/
   }
-  nav a:hover {
+/* header a:hover {
     background: red;
-    transition: .5s
+    transition: .5s;
+  }  */
+
+  li :hover {
+    background: red;
+    transition: .5s;
   }
   /*end nav bar code*/
-  .heroImg {
+  /*.heroImg {
     height: 600px
     padding 25px;
     margin-left: auto;
+    font-size: 30px;
+  }*/
+  /*.container {
+    display: flex;
+    align-items; center;
+    justify-content: center;
   }
+  img{
+  max-width: 100%;
+  }
+  .frame{
+    flex-basis: 40%;
+  }*/
+  .container {
+    display: grid;
+    align-items: top; 
+    grid-template-columns: 2fr 2fr;
+    column-gap: 40px;
+    padding-left: 100px;
+    padding-right: 50px;
+    margin-bottom: 120px;
+   }
+   
+   .framedportrait {
+     width: 300px;
+     height: 300px;
+   }
+
+  .aboutmetext {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 20px;
+    width: 800px;
+    position: relative;
+  }
+  h1 { 
+    font-size: 30px;
+    padding-left: 20px;
+  }
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    padding-top: 150px;
+    left: 52.5%;
+    position:absolute;
+    width: 500px;
+}
   .content {
     width: 500px
     padding 25px;
@@ -58,52 +145,85 @@
   .flexContainer {
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 30, 218);
+    background-color: rgb(209, 236, 206);
+  }
+  h3 { 
+    font-size: 30px;
   }
   .flexContainer > div {
-    background-color: #f1f1f1;
-    margin: 10px;
+    background-color: #f69999;
+    margin: 30px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
     width: 33%;
+    overflow: auto;
+    align-self: center;
   }
   .item1 {
     grid-area: myArea;
   }
  /*<!-- My Work Section Constructed using CSS Grid -->*/
+ /*Changed to Flex container in HW 19*/
   .workGrid {
-    display: grid;
-    grid-template-rows: 200px 200px 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'myArea myArea myArea myArea myArea';
+    display: flex;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'myArea myArea';
     flex-direction: row;
-    background-color: rgb(255, 30, 218);
+    background-color: rgb(209, 202, 255);
+  }
+  h4{
+    font-size: 30px;
   }
   .workGrid > div {
     background-color: #f1f1f1;
-    margin: 10px;
+    margin: 40px;
     padding: 20px;
-    font-size: 30px;
-    width: 33%;
+    font-size: 20px;
+    width: 45%;
+    align-items: center;
+    align-self: center;
+    overflow: auto;
   }
-  footer {
-    width: 500px
-    padding 25px;
-    margin: 0 auto;
-    background: #373738;
+ footer {
+    background-color: rgb(255, 250, 242);
+    outline: 2px rgb(0, 72, 255);
+    outline-style: dotted;
+    outline-offset: bottom;
   }
   footer ul {
-    display: inline-block; 
+    /* outline: 2px solid red; */
+    background-color: rgb(255, 250, 242);
+    /* padding: 0px;
+    margin-top: 0px; */
+    /* height: 130px;
+    width: 100%; */
+    list-style: none; 
+    padding: 0;
+    display: inline-block;  
+    margin-left: 100px;
+    float: right;
+    margin-right: 10px;
+  }
+  .inline-block {
+    display: inline-block;
     vertical-align: top;
-    width: 500px
-    padding 25px;
-    margin: 0 auto;
-    background: #373738;
   }
   footer li {
-    text-align: center;
+    font-size: 20px;
+    width: 80px;
+    height: 30px;
+    margin: 20px; 
+    display: inline-block;
+    padding: 20px;
   }
-  @media only screen and (max-width: 600px) {
+  footer li a {
+    margin: 5px;
+    text-decoration: none;
+    color:rgb(255, 183, 0);
+    text-align: right;
+  }
+  /* @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
     }
@@ -114,4 +234,4 @@
       grid-template-areas: 'myArea myArea myArea myArea myArea';
       background-color: rgb(255, 30, 218);
     }
-  }
+  } */
